@@ -3,15 +3,15 @@ class Ball {
     this.x = random(25, width-25);
     this.y = random(25, height-25);
     this.tam = 50;
-    this.velx = 10;
-    this.vely = 8;
+    this.velx = 5;
+    this.vely = 5;
     this.red = random(0, 255);
     this.green = random(0, 255);
     this.blue = random(0, 255);
 
   }
   mostrar() {
-    fill(this.red, this.blue, this.green,20);
+    fill(this.red, this.blue, this.green);
     ellipse(this.x, this.y, this.tam, this.tam);
   }
   moverx() {
