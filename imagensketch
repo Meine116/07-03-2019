@@ -1,0 +1,32 @@
+var img;
+var J;
+
+
+function preload(){
+  img = loadImage('jolteon-png-3.png');
+  
+}
+function setup() {
+  createCanvas(400, 400);
+  J = new Jolteon();
+  
+}
+
+function draw() {
+  background(220);
+ J.mostrar();
+  if(keyIsPressed && keyCode == RIGHT_ARROW){
+    J.derecha();
+  }
+     if(keyIsPressed && keyCode == LEFT_ARROW){
+       J.izquierda();
+     }
+   if(keyIsPressed && keyCode == DOWN_ARROW){
+       J.abajo();
+   } 
+     if(keyIsPressed && keyCode == UP_ARROW){
+       J.arriba();
+}
+   }
+
+
